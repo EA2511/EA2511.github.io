@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="https://github.com/EiR06/aplikasi_kasir_smkn1kadipaten/blob/master/public/img/logo.png" width="120"></a>
+    <img src="https://github.com/EA2511/blob/master/public/img/logo.png" width="120"></a>
 </p>
 
 ## Aplikasi Kasir SMKN 1 Kadipaten
