@@ -15,20 +15,20 @@
         }
         .logo {
             position: absolute;
-            top: 3pt;
+            top: 30pt;
             right: 0pt;
             font-size: 16pt;
             font-family: Arial, Helvetica, sans-serif;
             font-weight: bold;
-            color: #fff !important;
+            color: #F3CB51 !important;
         }
         .logo p {
-            text-align: right;
-            margin-right: 16pt;
+            text-align: left;
+            margin-right: 150pt;
         }
         .logo img {
             position: absolute;
-            margin-top: -5pt;
+            margin-top: -15pt;
             width: 40px;
             height: 40px;
             right: 16pt;
@@ -40,7 +40,7 @@
             font-size: 12pt;
             font-family: Arial, Helvetica, sans-serif;
             font-weight: bold;
-            color: #fff !important;
+            color:  #F3CB51 !important;
         }
         .telepon {
             position: absolute;
@@ -49,11 +49,11 @@
             font-size: 10pt;
             font-family: Arial, Helvetica, sans-serif;
             font-weight: bold;
-            color: #fff;
+            color:  #F3CB51;
         }
         .barcode {
             position: absolute;
-            top: 105pt;
+            top: 100pt;
             left: .860rem;
             border: 1px solid #fff;
             padding: .5px;
