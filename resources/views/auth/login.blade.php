@@ -1,10 +1,31 @@
 @extends('layouts.auth')
 
 @section('login')
+<style>
+.bg {
+            background-image: url('img/backe.jpg'); /* Pastikan path gambar benar */
+            background-repeat: no-repeat; /* Tidak mengulang gambar */
+            background-size: cover; /* Menutupi seluruh elemen */
+            background-position: center; /* Memusatkan gambar */
+            width: 100vw; /* Lebar viewport */
+            height: 100vh; /* Tinggi viewport */
+            position: absolute; /* Mengatur posisi absolute */
+            top: 0; /* Menempatkan di atas */
+            left: 0; /* Menempatkan di kiri */
+            margin: 0; /* Menghapus margin default */
+            padding: 0; /* Menghapus padding default */
+            box-sizing: border-box; /* Padding dan border termasuk dalam lebar dan tinggi */
+        }
+</style>
+
+<div class="bg">
+    <!-- Konten di sini jika ada -->
+
+
 <div class="login-box">
 
     <!-- /.login-logo -->
-    <div class="login-box-body animated fadeInDown" style="background-color: #f7f9fc; padding: 30px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);">
+    <div class="login-box-body animated fadeInDown" style="background-image: url('img/back.jpg'); padding: 30px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);">
         <div class="login-logo">
             <a href="{{ url('/') }}">
                 <img src="{{ url($setting->path_logo) }}" alt="logo.png" width="100" class="animated bounceIn" style="margin-bottom: 20px;">
@@ -48,6 +69,7 @@
         </form>
     </div>
     <!-- /.login-box-body -->
+</div>
 </div>
 <!-- /.login-box -->
 @endsection
