@@ -1,80 +1,134 @@
 <p align="center">
-    <img src="https://github.com/EA2511/EA2511.github.io/blob/main/public/img/user.jpg" width="120">
+  <img src="./public/img/user.jpg" width="120" style="border-radius: 50%;" alt="Logo Toko Smart">
 </p>
 
-## Aplikasi Kasir SMKN 1 Kadipaten Toko Smart
+<h1 align="center">Aplikasi Kasir SMKN 1 Kadipaten Toko Smart</h1>
 
-Aplikasi Kasir Toko Smart ini dikembangkan untuk memudahkan pengelolaan transaksi penjualan dan manajemen stok barang di SMKN 1 Kadipaten. Aplikasi ini menyediakan fitur-fitur penting seperti pencatatan transaksi, pelacakan stok barang secara otomatis, serta manajemen profil pengguna (kasir) yang terintegrasi. Dengan aplikasi ini, diharapkan proses administrasi koperasi dapat berjalan lebih efisien dan akurat.
+<p align="center">
+  <b>Sistem Point of Sales (POS), Manajemen Inventaris Stok, dan Keanggotaan Terpadu</b><br>
+  Dikembangkan untuk digitalisasi transaksi dan operasional koperasi SMKN 1 Kadipaten.
+</p>
 
-### Beberapa Fitur yang tersedia:
-- Manajemen Kategori Produk
-- Manajemen Produk
-  - Multiple Delete
-  - Cetak Barcode
-- Manajemen Member atau Anggota
-  - Cetak Kartu Member
-- Manajemen Supplier
-- Transaksi Pengeluaran
-- Transaksi Pembelian
-- Transaksi Penjualan
-- Laporan Pendapatan atau Laba & Rugi
-  - Bulanan
-  - Harian
-  - Custom Tanggal
-- Custom Tipe Nota
-  - Nota Besar
-  - Nota Kecil / Thermal Nota
-- Manajemen User dan Profil
-- Pengaturan Toko
-  - Identitas
-  - Upload Desain Kartu Member
-  - Setting Diskon Member
-- User (Administrator, Kasir)
-- Grafik ChartJS pada Dashboard
+<p align="center">
+  <img src="https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white" alt="Laravel">
+  <img src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white" alt="PHP">
+  <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL">
+  <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind CSS">
+  <img src="https://img.shields.io/badge/Maintainer-EA2511-0284c7?style=for-the-badge&logo=github" alt="Maintainer">
+</p>
 
-### Setup Aplikasi
-Jalankan perintah 
+---
+
+## 📌 Ringkasan Proyek
+
+**Aplikasi Kasir Toko Smart** dirancang untuk mempermudah tata kelola transaksi penjualan barang, pemantauan stok secara otomatis, serta manajemen kasir dan anggota koperasi secara terintegrasi. Sistem ini memastikan pencatatan kas keluar-masuk akurat, efisien, dan transparan.
+
+---
+
+## ✨ Fitur Utama
+
+### 🛒 Transaksi & Kasir (Point of Sales)
+* **Pencatatan Penjualan Cepat**: Input transaksi kasir dengan antarmuka responsif.
+* **Cetak Barcode Produk**: Pembuatan kode barcode untuk pelabelan barang dagangan.
+* **Kustomisasi Cetak Nota**:
+  * Nota Thermal (Printer Struk Kasir)
+  * Nota Besar (Format Standar A4)
+* **Pencatatan Pengeluaran**: Tracking biaya operasional harian toko.
+
+### 📦 Manajemen Produk & Inventaris
+* **Kategori & Katalog Produk**: Pengelompokan barang berdasarkan kategori.
+* **Bulk Action**: Fitur Multiple Delete untuk manajemen katalog dalam jumlah besar.
+* **Sinkronisasi Stok Otomatis**: Stok bertambah otomatis pada pembelian dan berkurang pada penjualan.
+
+### 👥 Keanggotaan & Mitra (Supplier)
+* **Manajemen Member Koperasi**: Registrasi anggota dengan sistem diskon khusus.
+* **Cetak Kartu Member**: Desain kartu keanggotaan siap cetak langsung dari aplikasi.
+* **Manajemen Supplier**: Pencatatan riwayat pasokan barang dari berbagai distributor.
+
+### 📊 Laporan Finansial & Dashboard
+* **Analitik Real-Time**: Visualisasi data statistik dan tren transaksi menggunakan Chart.js.
+* **Laporan Laba & Rugi**:
+  * Rekapitulasi Harian
+  * Rekapitulasi Bulanan
+  * Custom Rentang Tanggal
+
+### 🔐 Hak Akses Bertingkat (Role-Based Access)
+* **Administrator**: Akses penuh ke seluruh modul, pengaturan identitas toko, kartu member, dan manajemen pengguna.
+* **Kasir**: Akses operasional kasir untuk transaksi penjualan dan pencetakan struk.
+
+---
+
+## 🛠️ Tech Stack
+
+| Komponen | Teknologi |
+| :--- | :--- |
+| **Backend Framework** | Laravel |
+| **Bahasa Pemrograman** | PHP 8.x |
+| **Database** | MySQL |
+| **Frontend Styling** | Tailwind CSS / Blade Templating |
+| **Visualisasi Data** | Chart.js |
+| **Autentikasi** | Laravel Jetstream / Fortify |
+
+---
+
+## 🚀 Panduan Instalasi
+
+### 1. Clone Repositori
 ```bash
-composer update
+git clone https://github.com/EA2511/EA2511.github.io.git toko-smart
+cd toko-smart
 ```
-atau:
+
+### 2. Install Dependensi
 ```bash
 composer install
+npm install && npm run dev
 ```
-Copy file .env dari .env.example
+
+### 3. Konfigurasi Environment
+Salin file `.env.example` menjadi `.env`:
 ```bash
 cp .env.example .env
 ```
-Konfigurasi file .env
-```bash
+Sesuaikan konfigurasi database pada file `.env`:
+```env
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
-DB_DATABASE=example_app
+DB_DATABASE=tokoku
 DB_USERNAME=root
 DB_PASSWORD=
 ```
-Opsional
-```bash
-APP_NAME=Laravel
-APP_ENV=local
-APP_KEY=base64:QGRW4K7UVzS2M5HE2ZCLlUuiCtOIzRSfb38iWApkphE=
-APP_DEBUG=true
-APP_URL=http://example-app.test
-```
-Generate key
+Generate application key:
 ```bash
 php artisan key:generate
 ```
-Migrate database
+
+### 4. Database Setup & Seeder
+Jalankan migrasi dan seeder awal:
 ```bash
-php artisan migrate
+php artisan migrate --seed
 ```
-Seeder table User, Pengaturan
-```bash
-php artisan db:seed
-```
-Menjalankan aplikasi
+*Catatan: Anda juga dapat langsung mengimpor file `tokoku.sql` ke database MySQL Anda.*
+
+### 5. Menjalankan Server Lokal
 ```bash
 php artisan serve
 ```
+Akses aplikasi melalui browser: [http://localhost:8000](http://localhost:8000)
+
+---
+
+## 🔑 Kredensial Default (Seeder)
+
+| Role | Email | Password |
+| :--- | :--- | :--- |
+| **Administrator** | `administrator1@gmail.com` | `123` |
+| **Kasir** | `user1@gmail.com` | `123` |
+
+---
+
+## 👤 Pengembang
+
+* **Edrick Andreas** — [@EA2511](https://github.com/EA2511)
+* SMKN 1 Kadipaten
