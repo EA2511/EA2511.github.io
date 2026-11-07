@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./public/img/user.jpg" width="120" style="border-radius: 50%;" alt="Logo Toko Smart">
+  <img src="https://raw.githubusercontent.com/EA2511/EA2511.github.io/main/public/img/user.jpg" width="120" alt="Logo Toko Smart">
 </p>
 
 <h1 align="center">Aplikasi Kasir SMKN 1 Kadipaten Toko Smart</h1>
